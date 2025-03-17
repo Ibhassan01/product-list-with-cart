@@ -46,7 +46,7 @@
     margin: 0 3%;
 }
 .quantityUI{
-    font-size: small;
+    font-size: 10px;
     z-index: 50;
     background-color: var(--Rose-50);
     border: 1px solid var(--Red-10);
@@ -125,23 +125,36 @@ button{
         margin: -17% 10% 0 17%;
     }
 }
-@media only screen and (min-width:990px){
-    .add_to_cart{
-        margin: -7% 20% 0 13%;
+
+@media only screen and (min-width: 750px){
+    .item_container{
+        width: 40%;
     }
-    /* .quantityUI{
-        margin: -12% 14% 0 8%;
-    } */
+}
+
+@media only screen and (min-width:990px){
+    .add_to_cart, .quantity_button{
+        font-size: 12px;
+    }
+    .quantityUI{
+        width: 55%;
+    }
+    .quantityUI span{
+        font-size: 15px;
+        margin: 0 10px;
+    }
 }
 @media only screen and (min-width:980px){
-    .image{
-        width:100%;
-    }
     .quantityUI{
         margin: -13% 14% 0 23%;
     }
     .add_to_cart{
         margin: -7% 14% 0 23%;
         width: 50%;
+    }
+}
+@media only screen and (min-width: 1020px){
+    .item_container{
+        width: 30%;
     }
 }
