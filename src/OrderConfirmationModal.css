@@ -1,0 +1,105 @@
+:root{
+    --Red-10: hsl(14, 86%, 42%);
+    --Green-10: hsl(159, 69%, 38%);
+    --Rose-50: hsl(20, 50%, 98%);
+    --Rose-100: hsl(13, 31%, 94%);
+    --Rose-300: hsl(14, 25%, 72%);
+    --Rose-400: hsl(7, 20%, 60%);
+    --Rose-500: hsl(12, 20%, 44%);
+    --Rose-900: hsl(14, 65%, 9%);
+}
+.modal-overlay {
+    overflow: scroll;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.order-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--Rose-100);
+    border-radius: 10px;
+}
+
+.order-item {
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.item-details {
+    /* outline: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+.start-new-order-button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--Green-10);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.start-new-order-button {
+    font-size: 0.8rem;
+    width: 100%;
+    padding: 10px 0 30px 0;
+    background-color: var(--Red-10);
+    color: white;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    margin-top: 10px;
+}
