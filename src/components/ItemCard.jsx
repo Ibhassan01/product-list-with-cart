@@ -31,13 +31,13 @@ const ItemCard = ({ src, category, name, price, addToCart }) => {
             {showQuantityUI ? (
                 <div className="quantityUI">
                     <div className='amount'>
-                    <button className="quantity_button" onClick={handleDecrement}>
-                        -
-                    </button>
-                    <span>{quantity}</span>
-                    <button className="quantity_button" onClick={handleIncrement}>
-                        +
-                    </button>
+                        <button className="quantity_button" onClick={handleDecrement}>
+                            -
+                        </button>
+                        <span>{quantity}</span>
+                        <button className="quantity_button" onClick={handleIncrement}>
+                            +
+                        </button>
                     </div>
                     <button className="confirm-button" onClick={handleConfirmQuantity}>
                         Confirm
