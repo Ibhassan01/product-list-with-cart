@@ -80,7 +80,7 @@ function App() {
                         <h2>Your Cart ({cart.length})</h2>
                         {cart.map((item, index) => (
                             <div key={index} className="cart-item">
-                                <span>{item.name}</span>
+                                <span className='name'>{item.name}</span>
                                 <span>{item.quantity}x</span>
                                 <span>${(item.price * item.quantity).toFixed(2)}</span>
                                 <button className='remove' onClick={() => removeFromCart(item.name)}>
