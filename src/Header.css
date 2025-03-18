@@ -13,7 +13,7 @@ body{
 }
 p{
     outline: var(--outline);
-    font-size: 3rem;
-    font-weight: 900;
+    font-size: 3.5rem;
+    font-weight: 800;
     width: 50%;
 }
